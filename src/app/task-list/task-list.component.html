@@ -1,0 +1,15 @@
+<ul>
+    <li *ngFor="let task of tasks">
+      <div>ID: {{ task.id }}</div>
+      <div>Type: {{ task.type }}</div>
+      <div>Priority: {{ task.priority }}</div>
+      <div>Status: {{ task.status }}</div>
+      <div>Title: {{ task.title }}</div>
+      <div>Description: {{ task.description }}</div>
+      <div>Executor: {{ task.executor }}</div>
+      <div>Creator: {{ task.creator }}</div>
+      <div>Created At: {{ task.createdAt | date }}</div>
+      <div>Last Modified At: {{ task.lastModifiedAt | date }}</div>
+      <hr>
+    </li>
+</ul>

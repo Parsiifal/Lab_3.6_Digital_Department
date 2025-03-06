@@ -1,0 +1,19 @@
+<nav>
+  <ul>
+    <li><a [routerLink]="['/page1']" (click)="goToPage1()">Page 1</a></li>
+    <li><a [routerLink]="['/page2']" (click)="goToPage2()">Page 2</a></li>
+    <li><a routerLink="/page3">Page 3</a></li>
+    <li><a routerLink="/task-add">Task-add</a></li>
+    <li><a routerLink="/task-list">Task-list</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+
+<div>
+  <label appItalicText>Представьтесь, пожалуйста</label>
+  <input [(ngModel)]="greeting"/>
+</div>
+
+<div>
+  <button (click)="onSayHi()">Скажи "Привет"</button>
+</div>
